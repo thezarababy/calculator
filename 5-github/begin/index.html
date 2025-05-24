@@ -8,19 +8,19 @@
 </head>
 <body>
     <div class="container">
-        <section class="output-screen">
+        <section class="output-screen" id="display">
             0
         </section>
         <section class="calc-buttons">
             <div class="row">
-                <button class="span2">C</button>
-                <button>&larr;</button>
-                <button class="orange">&divide;</button>
+                <button class="span2" id="clear" onclick="inc()">C</button>
+                <button id="goBack">&larr;</button>
+                <button class="orange" id="divide">&divide;</button>
             </div>
             <div class="row">
-                <button>7</button>
-                <button>8</button>
-                <button>9</button>
+                <button id="seven" onclick="num7()">7</button>
+                <button id="eight">8</button>
+                <button id="nine">9</button>
                 <button class="orange">&times</button>
             </div>
            
@@ -37,11 +37,15 @@
                 <button class="orange">&plus;</button>
             </div>
             <div class="row">
-                <button class="span3">0</button>
-                <button class="orange">&equals;</button>
+                <button >0</button>
+                <button class="orange">&#8730;</button>
+                <button class="orange">^</button>
+                <button >&equals;</button>
+                
+                
             </div>
         </section>
     </div>
-    
+    <script src="./script.js"></script>
 </body>
 </html>
