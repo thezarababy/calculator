@@ -8,39 +8,39 @@
 </head>
 <body>
     <div class="container">
-        <section class="output-screen" id="display">
-            0
-        </section>
+        <input class="screen" id="display">
+            
+        
         <section class="calc-buttons">
             <div class="row">
-                <button class="span2" id="clear" onclick="inc()">C</button>
-                <button id="goBack">&larr;</button>
-                <button class="orange" id="divide">&divide;</button>
+                <button class="span2" id="clear" onclick="toClear()">C</button>
+                <button onclick="goBack()">&larr;</button>
+                <button class="orange" onclick="toDisplay('&divide;')">&divide;</button>
             </div>
             <div class="row">
-                <button id="seven" onclick="num7()">7</button>
-                <button id="eight">8</button>
-                <button id="nine">9</button>
-                <button class="orange">&times</button>
+                <button onclick="toDisplay('7')">7</button>
+                <button  onclick="toDisplay('8')">8</button>
+                <button onclick="toDisplay('9')">9</button>
+                <button class="orange" onclick="toDisplay('&times')">&times</button>
             </div>
            
             <div class="row">
-                <button>4</button>
-                <button>5</button>
-                <button>6</button>
-                <button class="orange">&#8722</button>
+                <button onclick="toDisplay('4')">4</button>
+                <button onclick="toDisplay('5')">5</button>
+                <button onclick="toDisplay('6')">6</button>
+                <button class="orange" onclick="toDisplay('&#8722')">&#8722</button>
             </div>
             <div class="row">
-                <button>1</button>
-                <button>2</button>
-                <button>3</button>
-                <button class="orange">&plus;</button>
+                <button onclick="toDisplay('1')">1</button>
+                <button onclick="toDisplay('2')">2</button>
+                <button onclick="toDisplay('3')">3</button>
+                  <button onclick="toDisplay('&plus;')">+</button>
             </div>
             <div class="row">
-                <button >0</button>
-                <button class="orange">&#8730;</button>
-                <button class="orange">^</button>
-                <button >&equals;</button>
+                <button onclick="toDisplay('0')">0</button>
+                <button class="orange" onclick="toDisplay('&#8730;')">&#8730;</button>
+                <button class="orange" onclick="toDisplay('^')">^</button>
+                <button  class="orange" onclick="toCalculate()">&equals;</button>
                 
                 
             </div>

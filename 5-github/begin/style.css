@@ -3,16 +3,29 @@
     margin: 0;
     padding: 0;
 }
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
 .container{
     
     width: 400px;
     background-color: black;
+   
 }
 .row{
     /* border: 2px solid greenyellow; */
     margin-bottom: 0.5%;
 }
-.output-screen{
+input{
+    width: 100%;
+    border: none;
+    background-color: black;
+    color: white;
+}
+.screen{
     color: white;
     text-align: right;
     font-family: 'Courier New', Courier, monospace;
@@ -32,6 +45,7 @@ button{
     font-size: 40px;
     height: 100px;
     flex-basis: 24.5%;
+    cursor: pointer;
 }
 
 button:hover{
@@ -44,6 +58,10 @@ button:last-child{
     background-color:  #df974c;
     color: white;
 }
+button:last-child:hover{
+     background-color:  #dfb07e;
+}
+
 .span2{
 flex-basis: 49.7%;
 }
